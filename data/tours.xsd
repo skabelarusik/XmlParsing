@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/touristVouchers"
+        xmlns:tns="http://www.example.com/touristVouchers"
+        elementFormDefault="qualified">
+
+    <element name="touristVouchers">
+        <complexType>
+            <sequence>
+                <element name="tour" type="tns:tour" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="tour">
+            <sequence>
+                <element name="city" type="tns:city" minOccurs="1" maxOccurs="unbounded"/>
+                <element name="days" type="tns:days" minOccurs="1" />
+                <element name="hotel" type="tns:hotel" minOccurs="1" maxOccurs="1" default="three"/>
+                <element name="transport" type="tns:transport" minOccurs="0" default="bus" />
+                <element name="food" type="tns:food" minOccurs="0"/>
+                <element name="cost" type="tns:cost" minOccurs="1"/>
+                <element name="hotel-option" type="tns:hotel-option" minOccurs="0"/>
+            </sequence>
+            <attribute name="country" type="tns:country" use="required"/>
+            <attribute name="typeTour" type="tns:type" use="required"/>
+            <attribute name="id" type="tns:id" use="required" />
+        </complexType>
+    
+    <simpleType name="type">
+        <restriction base="string">
+            <enumeration value="holiday"/>
+            <enumeration value="excursion"/>
+            <enumeration value="weekend"/>
+            <enumeration value="hot"/>
+        </restriction>
+    </simpleType>
+    
+    <simpleType name="country">
+        <restriction base="string">
+            <enumeration value="bulgaria"/>
+            <enumeration value="turkey"/>
+            <enumeration value="thailand"/>
+            <enumeration value="serbia"/>
+            <enumeration value="spain"/>
+            <enumeration value="greece"/>
+            <enumeration value="ukraine"/>
+            <enumeration value="china"/>
+            <enumeration value="india"/>
+            <enumeration value="italy"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="hotel-option">
+        <sequence>
+            <element name="tv" type="boolean" default="false" minOccurs="0" maxOccurs="1"/>
+            <element name="condition" type="boolean" default="false" minOccurs="0" maxOccurs="1"/>
+            <element name="pool" type="boolean" default="false" maxOccurs="1" minOccurs="0" />
+        </sequence>
+    </complexType>
+
+    <simpleType name="city">
+        <restriction base="string">
+            <pattern value="[\w\W]{2,40}"/>
+        </restriction>
+    </simpleType>
+    
+    <simpleType name="transport">
+        <restriction base="string">
+            <enumeration value="car"/>
+            <enumeration value="bus"/>
+            <enumeration value="train"/>
+            <enumeration value="plane"/>
+            <enumeration value="microbus"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="days">
+        <restriction base="positiveInteger">
+            <minInclusive value="1"/>
+            <maxExclusive value="365"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="hotel">
+        <restriction base="string">
+            <enumeration value="one"/>
+            <enumeration value="two"/>
+            <enumeration value="three"/>
+            <enumeration value="four"/>
+            <enumeration value="five"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="cost">
+        <restriction base="decimal">
+            <minInclusive value="100"/>
+            <maxExclusive value="100000"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="food">
+        <restriction base="string">
+            <enumeration value="all_incluzive"/>
+            <enumeration value="none"/>
+            <enumeration value="breakfast"/>
+            <enumeration value="buffet"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="id">
+        <restriction base="ID">
+            <pattern value="t\d{1,6}"/>
+        </restriction>
+    </simpleType>
+
+</schema>

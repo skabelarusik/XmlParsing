@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<touristVouchers xmlns="http://www.example.com/touristVouchers">
+    <tour typeTour="holiday" country="spain" id="t1">
+        <city>barcelona</city>
+        <days>7</days>
+        <hotel>three</hotel>
+        <cost>550</cost>
+        <hotel-option>
+            <tv>true</tv>
+            <condition>true</condition>
+            <pool>true</pool>
+        </hotel-option>
+    </tour>
+
+    <tour typeTour="holiday" country="china" id="t2">
+        <city>pekin</city>
+        <days>12</days>
+        <hotel>four</hotel>
+        <transport>plane</transport>
+        <food>breakfast</food>
+        <cost>1400</cost>
+        <hotel-option>
+            <tv>true</tv>
+            <condition>true</condition>
+        </hotel-option>
+    </tour>
+
+    <tour typeTour="excursion" country="greece" id="t3">
+        <city>athens</city>
+        <days>9</days>
+        <hotel>two</hotel>
+        <transport>microbus</transport>
+        <cost>800</cost>
+    </tour>
+
+    <tour typeTour="holiday" country="thailand" id="t4">
+        <city>KO SAMUI</city>
+        <days>14</days>
+        <hotel>four</hotel>
+        <transport>microbus</transport>
+        <food>all_incluzive</food>
+
+        <cost>2400</cost>
+        <hotel-option>
+            <tv>true</tv>
+            <condition>true</condition>
+            <pool>true</pool>
+        </hotel-option>
+    </tour>
+
+    <tour typeTour="weekend" country="ukraine" id="t5">
+        <city>LVIV</city>
+        <days>2</days>
+        <hotel>two</hotel>
+        <transport>bus</transport>
+        <food>all_incluzive</food>
+        <cost>120</cost>
+    </tour>
+
+    <tour typeTour="hot" country="italy" id="t6">
+        <city>ROME</city>
+        <days>7</days>
+        <hotel>three</hotel>
+        <transport>microbus</transport>
+        <food>breakfast</food>
+        <cost>500</cost>
+        <hotel-option>
+            <condition>true</condition>
+        </hotel-option>
+    </tour>
+
+    <tour typeTour="hot" country="thailand" id="t7">
+        <city>bangkok</city>
+        <days>9</days>
+        <hotel>four</hotel>
+        <transport>plane</transport>
+        <cost>900</cost>
+    </tour>
+
+    <tour typeTour="holiday" country="spain" id="t8">
+        <city>tenerife</city>
+        <days>6</days>
+        <hotel>three</hotel>
+        <transport>plane</transport>
+        <food>buffet</food>
+        <cost>1300</cost>
+    </tour>
+
+    <tour typeTour="hot" country="india" id="t9">
+        <city>goa</city>
+        <days>12</days>
+        <hotel>three</hotel>
+        <transport>plane</transport>
+        <food>none</food>
+        <cost>1500</cost>
+        <hotel-option>
+            <condition>true</condition>
+            <pool>true</pool>
+        </hotel-option>
+    </tour>
+
+    <tour typeTour="excursion" country="turkey" id="t10">
+        <city>stambul</city>
+        <city>ankara</city>
+        <days>6</days>
+        <hotel>two</hotel>
+        <transport>bus</transport>
+        <food>buffet</food>
+        <cost>400</cost>
+    </tour>
+
+    <tour typeTour="holiday" country="serbia" id="t11">
+        <city>belgrad</city>
+        <days>6</days>
+        <hotel>three</hotel>
+        <transport>microbus</transport>
+        <cost>400</cost>
+        <hotel-option>
+            <tv>true</tv>
+        </hotel-option>
+    </tour>
+
+    <tour typeTour="hot" country="bulgaria" id="t12">
+        <city>sofia</city>
+        <days>10</days>
+        <hotel>three</hotel>
+        <transport>bus</transport>
+        <food>all_incluzive</food>
+        <cost>600</cost>
+    </tour>
+
+    <tour typeTour="weekend" country="ukraine" id="t13">
+        <city>Kiev</city>
+        <days>2</days>
+        <hotel>two</hotel>
+        <transport>car</transport>
+        <food>breakfast</food>
+        <cost>150</cost>
+    </tour>
+
+    <tour typeTour="holiday" country="india" id="t14">
+        <city>deli</city>
+        <days>7</days>
+        <hotel>two</hotel>
+        <transport>plane</transport>
+        <food>none</food>
+        <cost>870</cost>
+        <hotel-option>
+            <tv>true</tv>
+            <pool>true</pool>
+        </hotel-option>
+    </tour>
+
+    <tour typeTour="hot" country="italy" id="t15">
+        <city>venezia</city>
+        <days>4</days>
+        <hotel>four</hotel>
+        <transport>plane</transport>
+        <food>none</food>
+        <cost>650</cost>
+    </tour>
+
+    <tour typeTour="holiday" country="china" id="t16">
+        <city>guangou</city>
+        <days>12</days>
+        <hotel>four</hotel>
+        <transport>plane</transport>
+        <food>none</food>
+        <cost>1500</cost>
+    </tour>
+</touristVouchers>
